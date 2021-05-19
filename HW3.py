@@ -9,7 +9,7 @@ file = pd.read_csv('/Users/erenozbek/Desktop/KocPython2021/HW3/cses4_cut.csv')
 y = file['voted'].to_numpy()
 y = y.astype(float)
 
-#explanotary variables as educational level and househlod income, eliminating the uncertain answers
+#explanotary variables as educational level, socioeconomic status and househlod income, eliminating the uncertain answers
 
 X1 = file[['D2003']].to_numpy()
 X1.reshape(1, 12451)
@@ -20,7 +20,7 @@ X2 = file[['D2012']].to_numpy()
 X2 = X2.astype(float)
 for i in range(6,10):
 	X2[X2==i] = np.nan
-X3 = file[['D2013']].to_numpy()
+X3 = file[['D2020']].to_numpy()
 X3 = X3.astype(float)
 for i in range(6,10):
 	X3[X3==i] = np.nan
