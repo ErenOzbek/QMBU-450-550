@@ -20,7 +20,7 @@ X2 = file[['D2012']].to_numpy()
 X2 = X2.astype(float)
 for i in range(6,10):
 	X2[X2==i] = np.nan
-X3 = file[['D2013']].to_numpy()
+X3 = file[['D2020']].to_numpy()
 X3 = X3.astype(float)
 for i in range(6,10):
 	X3[X3==i] = np.nan
